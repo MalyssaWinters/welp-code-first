@@ -5,7 +5,7 @@ using System.Web;
 
 namespace WelpCodeFirst.Models
 {
-    public class WelpCodeFirstInitialize : System.Data.Entity.DropCreateDatabaseIfModelChanges<WelpCodeFirstContext>
+    public class WelpCodeFirstInitializer : System.Data.Entity.DropCreateDatabaseIfModelChanges<WelpCodeFirstContext>
     {
     }
 }

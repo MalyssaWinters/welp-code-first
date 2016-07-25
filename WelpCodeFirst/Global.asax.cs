@@ -5,6 +5,8 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
+using System.Data.Entity;
+using WelpCodeFirst.Models;
 
 namespace WelpCodeFirst
 {
@@ -12,6 +14,8 @@ namespace WelpCodeFirst
     {
         protected void Application_Start()
         {
+            Database.SetInitializer<WelpCodeFirstContext>(new WelpCodeFirstInitializer());
+
             AreaRegistration.RegisterAllAreas();
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
