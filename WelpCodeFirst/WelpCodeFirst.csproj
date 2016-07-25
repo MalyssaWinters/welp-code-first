@@ -171,6 +171,7 @@
     <Compile Include="Models\Rating.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Models\WelpCodeFirstContext.cs" />
+    <Compile Include="Models\WelpCodeFirstInitialize.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
