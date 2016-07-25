@@ -9,8 +9,7 @@ namespace WelpCodeFirst.Models
     public class Rating
     {
         public int RatingID { get; set; }
-        [MaxLength(50)]
-        public int StarReview { get; set; }
+        public int StarRating { get; set; }
         public string TextReview { get; set; }
         
 
