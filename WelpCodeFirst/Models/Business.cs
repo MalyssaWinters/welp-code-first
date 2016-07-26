@@ -9,7 +9,6 @@ namespace WelpCodeFirst.Models
     public class Business
     {
         public int BusinessID { get; set; }
-        [MaxLength(50)]
         public int BusinessTypeID { get; set; }
         [MaxLength(50)]
         public string BusinessName { get; set; }
