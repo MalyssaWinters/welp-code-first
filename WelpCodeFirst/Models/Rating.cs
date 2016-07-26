@@ -9,13 +9,14 @@ namespace WelpCodeFirst.Models
     public class Rating
     {
         public int RatingID { get; set; }
-        public int StarRating { get; set; }
+        public int UserID { get; set; }
+        public int BusinessID { get; set; }
+        public short? StarRating { get; set; }
         public string TextReview { get; set; }
         
-
         //Navigation properties
         //used when it is the many side of the relationship
-        public virtual ICollection<Business> Businesses { get; set; }
-        public virtual ICollection<User> Users { get; set; }
+        public virtual Business Business { get; set; }
+        public virtual User User { get; set; }
     }
 }

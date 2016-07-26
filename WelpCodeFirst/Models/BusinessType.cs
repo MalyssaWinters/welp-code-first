@@ -14,7 +14,7 @@ namespace WelpCodeFirst.Models
         
         //Navigation properties
         //used when it is the one side of the relationship
-        public virtual Business Business { get; set; }
+        public virtual ICollection<Business> Businesses { get; set; }
 
     }
 }

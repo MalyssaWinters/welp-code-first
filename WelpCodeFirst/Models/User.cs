@@ -13,15 +13,15 @@ namespace WelpCodeFirst.Models
         public string Username { get; set; }
         [MaxLength(50)]
         public string Password { get; set; }
-        [MaxLength(50)]
+        [MaxLength(100)]
         public string Email { get; set; }
         [MaxLength(50)]
         public string Location { get; set; }
 
         //Navigation properties
         //used when it is the one side of the relationship
-        public virtual Business Business { get; set; }
-        public virtual Rating Rating { get; set; }
-        public virtual Photo Photo { get; set; }
+        public virtual ICollection<Business> Businesses { get; set; }
+        public virtual ICollection<Rating> Ratings { get; set; }
+        public virtual ICollection<Photo> Photos { get; set; }
     }
 }

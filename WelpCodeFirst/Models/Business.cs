@@ -10,6 +10,8 @@ namespace WelpCodeFirst.Models
     {
         public int BusinessID { get; set; }
         [MaxLength(50)]
+        public int BusinessTypeID { get; set; }
+        [MaxLength(50)]
         public string BusinessName { get; set; }
         [MaxLength(100)]
         public string Address { get; set; }
@@ -18,13 +20,14 @@ namespace WelpCodeFirst.Models
         [MaxLength(50)]
         public string Phone { get; set; }
         public string Menu { get; set; }
+        public int UserID { get; set; }
 
         //Navigation properties
         //used when it is the many side of the relationship
-        public virtual ICollection<BusinessType> BusinessTypes { get; set; }
-        public virtual ICollection<User> Users { get; set; }
+        public virtual BusinessType BusinessType { get; set; }
+        public virtual User User { get; set; }
         //used when it is the one side of the relationship
-        public virtual Photo Photo { get; set; }
-        public virtual Rating Rating { get; set; }
+        public virtual ICollection<Photo> Photos { get; set; }
+        public virtual ICollection<Rating> Ratings { get; set; }
     }
 }
