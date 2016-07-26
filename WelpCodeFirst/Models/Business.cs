@@ -19,7 +19,7 @@ namespace WelpCodeFirst.Models
         [MaxLength(50)]
         public string Phone { get; set; }
         public string Menu { get; set; }
-        public int UserID { get; set; }
+        public int? UserID { get; set; }
 
         //Navigation properties
         //used when it is the many side of the relationship
